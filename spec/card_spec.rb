@@ -26,7 +26,7 @@ RSpec.describe Card do
   end
 end
 
-card_1 = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
-card_2 = Card.new("Which country has the largest population in the world?", "China", :Geography)
-card_3 = Card.new("What is the name of the tallest mountain in the world?", "Mount Everest", :Geography)
-card_4 = Card.new("How many continents are there?", "7", :Geography)
+# card_1 = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
+# card_2 = Card.new("Which country has the largest population in the world?", "China", :Geography)
+# card_3 = Card.new("What is the name of the tallest mountain in the world?", "Mount Everest", :Geography)
+# card_4 = Card.new("How many continents are there?", "7", :Geography)
