@@ -9,7 +9,7 @@ class Round
         @deck = deck
         @guess = guess
         @turns = []
-        @number_correct = []
+        @number_correct = 0
     end
 
     def current_card
@@ -23,16 +23,12 @@ class Round
     end
 
     def number_correct
-        if guess = true
-            @number_correct << + 1
+        count_correct = 0
+        turns.each do |turn|
+            if turn.correct? == true
+                count_correct += 1
+            end
         end
+        return count_correct
     end
-
-
-
-
-
-
-
-
 end
