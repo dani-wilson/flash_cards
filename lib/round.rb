@@ -31,4 +31,15 @@ class Round
         end
         return count_correct
     end
+
+    def number_correct_by_category(category)
+        count_correct_category = 0
+        turns.each do |turn|
+            if turn.correct? == true && turn.card.category == category
+                count_correct_category += 1
+            end
+        end
+        return count_correct_category
+    end
+
 end
