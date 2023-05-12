@@ -52,10 +52,16 @@ round = Round.new(deck)
         expect(round.number_correct_by_category(:STEM)).to eq(0)
     end
 
-    it 'takes a percentage of correct answers'
+    it 'takes a percentage of correct answers' do
+        # round.take_turn("Venus")
         expect(round.percent_correct).to eq(50.0)
     end
 
-
+    it 'takes a percentage of correct answers in category' do
+        expect(round.percent_correct_by_category(category)).to eq(100.0)
+    end
 
 end
+
+
+
